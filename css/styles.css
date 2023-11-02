@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face{
+	font-family: JunctionLig;
+	src: url(../fonts/Junction-light.otf);
+}
+
+@font-face{
+	font-family: ColabLig;
+	src: url(../fonts/ColabLig.otf);
+}
+
+@font-face{
+	font-family: Fertigo;
+	src: url(../fonts/Fertigo_PRO.otf);
+}
+
+@font-face{
+	font-family: OpenSans-CondLight;
+	src: url(../fonts/OpenSans-CondLight.ttf);
+}
+
+
+@font-face{
+	font-family: SourceSansPro-Light;
+	src: url(../fonts/SourceSansPro-Light.otf);
+}
+
+/*fonts that I'm using*/
+
+@font-face{
+	font-family: TofinoThin;
+	src:url(../fonts/Tofino_OTF/Tofino_Thin.otf)
+}
+
+@font-face{
+	font-family: TofinoLight;
+	src:url(../fonts/Tofino_OTF/Tofino_Light.otf)
+}
+
+@font-face{
+	font-family: TofinoBook;
+	src:url(../fonts/Tofino_OTF/Tofino_Book.otf);
+}
+
+@font-face{
+	font-family: TofinoMedium;
+	src:url(../fonts/Tofino_OTF/Tofino_Medium.otf);
+}
+
+@font-face{
+	font-family: TofinoRegular;
+	src:url(../fonts/Tofino_OTF/Tofino_Regular.otf)
+}
+
+@font-face{
+	font-family: LatoLight;
+	src:url(../fonts/Lato/Lato-Light.ttf)
+}
+
+@font-face{
+	font-family: Agbalumo;
+	src:url(../fonts/Agbalumo/Agbalumo-Regular.ttf)
+
+}
+
+@font-face{
+	font-family:SourceSansPro-Light;
+	src:url(../fonts/Playfair_Display/SourceSansPro-Light.otf)
+
+}
+
+@font-face{
+	font-family:EB_Garamond;
+	src:url(../fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf)
+}
+
+html, body{
+	margin:0;
+	padding:0;
+	border:0;
+	font-family:LatoLight;
+	background-color: #f8ffff;
+}
+
+body{
+	left-margin:100px;
+}
+
+li{
+	display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* website title i.e. my name kind of */
+header{
+	height:50px;
+	width: 100%;
+	position:fixed;
+	top:0;
+	display: block;
+	background-color: #f8ffff;
+	color: #00BBF2;
+	font-family: TofinoBook;
+	letter-spacing: 1px;
+	font-size: 12px;
+	margin-left: -20px;
+	margin-top:-10px;
+}
+
+
+article{
+	padding-top:75px;
+}
+
+h1{
+	margin-left:40px;
+		
+}
+
+h2{
+	text-align:center;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	font-family:EB_Garamond;
+	font-size:30px;
+
+}
+
+h3{
+	text-align:center;
+}
+
+p{
+	text-align: left;
+	padding-left:100px;
+	font-family: SourceSansPro-Light;
+}
+
+date{
+	text-align:right;
+	padding-left: 770px;
+	font-size:11px;
+}
+
+footer{
+	height:50px;
+	width: 100%;
+	position:fixed;
+	bottom:0;
+	display: block;
+	background-color: #f8ffff;
+	color: #00BBF2;
+	font-family: TofinoBook;
+	letter-spacing: 1px;
+	font-size: 12px;
+	margin-left: -20px;
+	margin-top:-10px;
+}
+
+
+/* pushes website's primary content to the right */
+
+.main_content{
+	width: 70%;
+	margin-left: 0px;
+	margin-top: 100px;
+}
+
+.img_content{
+	width: 70%;
+	margin-left: 220px;
+	margin-top: 100px;
+	padding-left: 50px;
+}
+
+/*zooms to enlarge images in gallery*/
+.img_content img{
+-moz-transition:-moz-transform 0.2s ease-in; 
+-webkit-transition:-webkit-transform 0.2s ease-in; 
+-o-transition:-o-transform 0.2s ease-in;
+}
+.img_content img:hover{
+-moz-transform:scale(2); 
+-webkit-transform:scale(2);
+-o-transform:scale(2);
+}
+
+ /*images on visuals page*/
+ 
+ .img_content img{
+ 	margin: 5px;
+	height: 100px;
+	width: auto;
+	border: 1px solid #DAF7A6;
+	padding: 4px;
+	padding: #ffffff;
+ }
+
+
+/* my picture on main page */
+
+#me{
+	width:30%;
+	height:auto;
+	float: right;
+	padding: 0 0 20px 20px;
+} 
+
+/* styling for links */
+
+/* unvisited link */
+a:link{
+	color: #000000;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited{
+	color: #333;
+}
+
+/* mouse over link */
+a:hover{
+	color: #F200BB;
+}
+
+/* seleted link */
+a:active{
+	background-color: #00BBF2;
+}
+ 
+ /* special settings for header link */
+ 
+ header a:link{
+ 	color: #00BBF2;
+ }
+ 
+header a:visited{
+ 	color: #00BBF2;
+}
+ 
+ header a:hover{
+ 	color: #F200BB;
+ }
+ 
+ li a.active{
+ 	display: block;
+	width: 120px;
+	color: #F200BB
+ }
+ 
+ 
+ /* contact page */
+ 
+ .contact_content{
+ 	width: 70%;
+	margin-left: 200px;
+	margin-top: 100px;
+	text-align: center;
+ }
+
+#logos img{
+	margin: 5px;
+}
+
+.css-typing{
+    width: 50em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 10s steps(50, end);
+    animation: type 10s steps(50, end);
+	font-size: 24px;
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+@media screen{
+}
+
+/*unused code
+p{
+	margin-left:80px;
+	display: block;
+}
+*/
+
